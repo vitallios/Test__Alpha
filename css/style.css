@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
+:root{
+    --text-defaultColor: #FFFFFF;
+}
+.play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    color: var(--text-defaultColor);
+    font-family: "Play", sans-serif;
+    font-size: 14px;
+    background-color: #000000;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.lg{
+    background: linear-gradient(#FFFFFF, #9E95FF, #FFFFFF );
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-defaultColor);
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* header */
+header{
+    background-color: hsla(266, 97%, 13%, 0.3
+    );
+}
+.header__top{
+    padding: 10px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+.header__buttom{
+    padding: 0 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header__buttom>button{
+    cursor: pointer;
+    width: min-content;
+    margin-right: 17px;
+}
+.header__buttom>div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 25px;
+}
+.header__buttom>div>input{
+    width: 100%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 1px solid var(--text-defaultColor);
+    background-color: #2E335A;
+    display: flex;
+    height: 100%;
+
+}
+.header__buttom>div::before{
+    content: url('./../images/svg/header__search.svg');
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    left: 12px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+.header__nav>ul{
+    display: none;
+}
+.header__contacts>button{
+    display: none;
+}
+.header__contacts>a{
+    font-size: 11px;
+}
